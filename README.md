@@ -1,66 +1,33 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+Tips Penggunaan Project
+.Pada project ini menggunakan css Bulma dan Laravel v9
+setelah XAMPP berjalan.
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+.Untuk menjalan kan project ini pada visual code setelah diarahkan ke folder yang berisi aplikasi laravel ini
+jalankan perintah di terminal npm run dev yang digunakan untuk mengaktifkan css bulma yang saya download melalui npm install.
+tanpa menutup terminal npm buka terminal baru untuk menjalan php artisan serve yang digunakan untuk mengaktifkan website yang ada.
 
-## About Laravel
+.Setelah berjalan maka akan diarahkan ke halaman login
+pada halaman login terdapat sign up , dan forgot password
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+-untuk register/sign up nantinya akan diarahkan ke halaman register yang akan membuat baru user yang dapat digunakan untuk login.Setelah berhasil
+mendaftar user akan diarahkan ke halaman /user yang menampilkan tabel dan terdapat navbar diatas yang berisikan logout dan change password.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-untuk fitur forgot password nantinya akan diarahkan ke form send link to emailreset password yang dimana harus mengetikkan email 
+user yang telah terdaftar untuk diganti passwordnya. Untuk uji coba fitur ini dapat menggunakan mailtrap.io yang merupakan testing email.
+setelah membuat akun -> masukl ke fitur email testing -> pilih my project setelah itu ke inbox -> pada bagian myinbox terdapat smtp settings
+dan ganti dropdown integration ke PHP LARAVEL7+. setelah itu copy data yang berada dibawah dropdown tersebut dan paste ke .env pada project.
+Setelah itu pengiriman email dapat dilihat testingnya melalui mailtrap.io
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+. Setelah melakukan login akan diarahkan ke halaman /user. yang menampilkan tabel dan navbar. halaman /user ini tidak dapat diakses apabila belum
+ada user yang login. dan untuk halaman login register dan forgot tidak dapat dimasuki oleh user yang telah login.
 
-## Learning Laravel
+untuk fitur change password nantinya user akan diarahkan ke form changepassword yang akan digunakan untuk mengganti password lama dengan password baru
+password lama perlu ditulis ulang agar dapat menggantinya dengan password baru.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+untuk fitur log out akan menglog keluar user yang saat itu sedang login.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+untuk halaman home terdapat fungsi CRUD siswa / user biasa dan uplod foto.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Jangan lupa untuk melakukan migrate untuk mendapatkan table User untuk login dan user untuk table yang berada pada halaman/user.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
