@@ -1,0 +1,29 @@
+#login-container {
+    background-image: url('https://images.unsplash.com/photo-1483354483454-4cd359948304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxvZ2lufGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+#register-container {
+    background-image: url('https://images.unsplash.com/photo-1483354483454-4cd359948304?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxvZ2lufGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-size: cover;
+    background-position: center center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0px 10px 10px 0px;
+}
+.horizontal-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+h1 {
+    font-size: 4rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 2;
+}
